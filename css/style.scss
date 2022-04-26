@@ -1,0 +1,179 @@
+$oblue: #0d6fb8;
+$oblue2: #50a1df;
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+
+}
+//84 , p 48
+
+.navbar {
+    height: 62px;
+    padding: 5px 50px;
+    background-color: white;
+    border-bottom: 6px solid $oblue;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        img {
+            height: 60px;
+        }
+    }
+
+    .nav_items {
+
+        a {
+            text-decoration: none;
+            margin: 0 6px;
+            font-weight: 500;
+            color: #061B2C;
+            font-size: 0.80rem;
+            padding: 0 10px;
+            i {
+                padding-left:2px;
+                color: $oblue;
+            }
+        }
+    }
+
+    .nav_search {
+        border-radius: 0.2rem;
+        border-bottom: 1px solid #333;
+        padding: 10px;
+
+        i {
+            color: #061B2C;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            padding-right: 10px;
+            width: 200px;
+        }
+    }
+}
+
+
+.cuota_bienvenida {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px 0;
+
+    .cuote {
+        height: 45px;
+        width: 70%;
+        padding: 5px;
+        background-color: #f7f5f5;
+        border-left: 4px solid $oblue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            font-weight: 500;
+            font-size: 16px;
+            color: black;
+
+        }
+    }
+}
+.swiper {
+    width: 90%;
+    height: 400px;
+    img { 
+        height: 100%;
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        color: white !important;
+    }
+  }
+
+
+  .btnContactarFixed {
+    background-image: linear-gradient(80deg, rgb(18, 51, 223), rgb(74, 132, 215));
+    color: white !important;
+    width: 68px;
+    height: 68px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    border-radius: 50%;
+    z-index: 30;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    i {
+        font-size: 29px;
+    }
+  }
+
+  .estudiar_en_isp {
+      h1 {
+        padding: 70px 0;
+        padding-left: 60px;
+        color: #003366;
+        font-size: 3.125rem;
+      }
+
+      .estudiar__banner {
+        min-height: calc(100vh - 62px);
+        width: 100%;
+        background-size: 100%;
+        background-position: right;
+        background-image: url(https://uade.edu.ar/media/orrn1of0/dsc_4179.jpg?anchor=center&mode=crop&width=1900&height=900&rnd=132929536759830000);
+        position: relative;
+        
+        .carreras {
+            left: 13%;
+            width: 35%;
+            position: absolute;
+            height: 100%;
+            background-color: #061b2c;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            .carrera_item {
+                display: flex;
+                align-items: center;
+                color: white;
+                width: 85%;
+                padding: 20px 0;
+                border-bottom: 5px solid $oblue2;
+                h2 { 
+                    font-size: 2.8rem;
+                    padding-bottom: 12px;
+                }
+
+                p {
+                    letter-spacing: 1;
+                }
+
+                .carrera_item_left{ 
+                    padding-left: 1px;
+                    width: 90% !important;
+                }
+
+                .carrera_item_right {
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    i {
+                        font-size: 30px;
+                        color: $oblue2;
+                    }
+                }
+            }
+        }
+        
+        }
+  }
